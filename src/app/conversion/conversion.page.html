@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Conversão de Moeda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content-container">
+    <!-- Campo de entrada para a quantia -->
+    <ion-item>
+      <ion-label position="floating">Quantia</ion-label>
+      <ion-input [(ngModel)]="amount" type="number"></ion-input>
+    </ion-item>
+
+    <!-- Seletor de moeda de origem -->
+    <ion-item>
+      <ion-label>De</ion-label>
+      <ion-select [(ngModel)]="selectedCurrencyFrom">
+        <ion-select-option value="USD">USD</ion-select-option>
+        <ion-select-option value="EUR">EUR</ion-select-option>
+        <ion-select-option value="BRL">BRL</ion-select-option>
+        <!-- Adicione outras moedas conforme necessário -->
+      </ion-select>
+    </ion-item>
+
+    <!-- Seletor de moeda de destino -->
+    <ion-item>
+      <ion-label>Para</ion-label>
+      <ion-select [(ngModel)]="selectedCurrencyTo">
+        <ion-select-option value="USD">USD</ion-select-option>
+        <ion-select-option value="EUR">EUR</ion-select-option>
+        <ion-select-option value="BRL">BRL</ion-select-option>
+        <!-- Adicione outras moedas conforme necessário -->
+      </ion-select>
+    </ion-item>
+
+    <!-- Botão para converter -->
+    <ion-button expand="full" (click)="convertCurrency()">Converter</ion-button>
+
+    <!-- Exibe o valor convertido -->
+    <div *ngIf="convertedValue !== undefined">
+      <p>Valor convertido: {{ convertedValue | number: '1.2-2' }} {{ selectedCurrencyTo }}</p>
+    </div>
+
+    <!-- Botão para voltar -->
+    <ion-button expand="full" (click)="goBack()">Voltar</ion-button>
+  </div>
+</ion-content>

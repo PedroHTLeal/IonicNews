@@ -1,5 +1,7 @@
 {
-  "name": "coinnect",
-  "integrations": {},
-  "type": "angular-standalone"
+  "name": "currency-converter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
 }

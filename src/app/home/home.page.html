@@ -1,33 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Conversor de Moedas</ion-title>
+    <ion-title>C.A.P. MOBILE</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label>Moeda Origem</ion-label>
-    <ion-select [(ngModel)]="sourceCurrency">
-      <ion-select-option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</ion-select-option>
-    </ion-select>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Moeda Destino</ion-label>
-    <ion-select [(ngModel)]="targetCurrency">
-      <ion-select-option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</ion-select-option>
-    </ion-select>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Valor</ion-label>
-    <ion-input type="number" [(ngModel)]="amount"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Valor Convertido</ion-label>
-    <ion-input readonly [value]="convertedValue"></ion-input>
-  </ion-item>
-
-  <ion-button expand="full" (click)="invertCurrencies()">Inverter Moedas</ion-button>
+  <div class="content-container">
+    <img src="assets/icon/coinnect_app(logo).jpg" alt="Logo do Coinnect" class="logo">
+    <h2>Bem-vindo ao Coinnect!</h2>
+    <ion-button class="custom-button" expand="full" [routerLink]="['/conversion']">Ir para Conversão</ion-button>
+  </div>
 </ion-content>
