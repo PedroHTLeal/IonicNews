@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Histórico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let conversion of history">
+      <ion-label>
+        {{ conversion.amount }} {{ conversion.source }} → {{ conversion.result }} {{ conversion.target }}
+        <p>{{ conversion.date | date:'short' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" color="danger" (click)="clearHistory()">Limpar Histórico</ion-button>
+</ion-content>
