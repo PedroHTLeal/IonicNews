@@ -1,17 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Histórico</ion-title>
+    <ion-title>Histórico de Conversões</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-button expand="full" color="warning" (click)="voltarParaConversao()">Voltar para Conversão</ion-button>
+  <ion-button expand="full" color="danger" (click)="excluirHistorico()">Limpar Histórico</ion-button>
+
   <ion-list>
-    <ion-item *ngFor="let conversion of history">
+    <ion-item *ngFor="let item of historico; let i = index">
       <ion-label>
-        {{ conversion.amount }} {{ conversion.source }} → {{ conversion.result }} {{ conversion.target }}
-        <p>{{ conversion.date | date:'short' }}</p>
+        <h2>{{ item.valorOriginal }} {{ item.moedaOrigem }} → {{ item.resultado }} {{ item.moedaDestino }}</h2>
+        <p>{{ item.data | date:'short' }}</p>
       </ion-label>
+      <ion-button fill="clear" color="danger" (click)="excluirRegistro(i)">Excluir</ion-button>
     </ion-item>
   </ion-list>
-  <ion-button expand="full" color="danger" (click)="clearHistory()">Limpar Histórico</ion-button>
 </ion-content>

@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Conversão de Moedas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked" style="font-size: 1.2rem;">Valor</ion-label>
+    <ion-input 
+      type="number" 
+      [(ngModel)]="valor" 
+      placeholder="Digite o valor" 
+      min="1"
+      style="font-size: 1.2rem;">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked" style="font-size: 1.2rem;">Moeda de Origem</ion-label>
+    <ion-select [(ngModel)]="moedaOrigem" style="font-size: 1.2rem;">
+      <ion-select-option value="USD">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.todamateria.com.br%2Fbandeira-dos-estados-unidos%2F&psig=AOvVaw33pMWsoLRZgU3TjfWjSZfs&ust=1734043291648000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDd8eXkoIoDFQAAAAAdAAAAABAE" alt="USA" class="flag"> <strong>USD</strong></span>
+      </ion-select-option>
+      <ion-select-option value="EUR">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FBandeira_Europeia&psig=AOvVaw0QJYuoxme0E0Q3zOIJZ6xe&ust=1734043326101000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDhx_bkoIoDFQAAAAAdAAAAABAE" alt="EU" class="flag"> <strong>EUR</strong></span>
+      </ion-select-option>
+      <ion-select-option value="BRL">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gov.br%2Fplanalto%2Fpt-br%2Fconheca-a-presidencia%2Facervo%2Fsimbolos-nacionais%2Fbandeira&psig=AOvVaw3teEignep1SspvP3l8sCi-&ust=1734043348335000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKC6toDloIoDFQAAAAAdAAAAABAE" alt="Brasil" class="flag"> <strong>BRL</strong></span>
+      </ion-select-option>
+      <ion-select-option value="GBP">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FBandeira_do_Reino_Unido&psig=AOvVaw1gfmnymhUC4E4GyQAnxvB3&ust=1734043372508000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCU9YvloIoDFQAAAAAdAAAAABAE" alt="Reino Unido" class="flag"> <strong>GBP</strong></span>
+      </ion-select-option>
+      <ion-select-option value="JPY">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrasilescola.uol.com.br%2Fjapao%2Fbandeira-do-japao.htm&psig=AOvVaw2zDgROtX56QF13TuOF5czW&ust=1734043421605000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjNwaPloIoDFQAAAAAdAAAAABAE" alt="Japão" class="flag"> <strong>JPY</strong></span>
+      </ion-select-option>
+      <ion-select-option value="CAD">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FBandeira_do_Canad%25C3%25A1&psig=AOvVaw1_YZLWVTUNJ6nMnjCyFA6H&ust=1734043440166000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDjnKzloIoDFQAAAAAdAAAAABAE" alt="Canadá" class="flag"> <strong>CAD</strong></span>
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked" style="font-size: 1.2rem;">Moeda de Destino</ion-label>
+    <ion-select [(ngModel)]="moedaDestino" style="font-size: 1.2rem;">
+      <ion-select-option value="USD">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.todamateria.com.br%2Fbandeira-dos-estados-unidos%2F&psig=AOvVaw33pMWsoLRZgU3TjfWjSZfs&ust=1734043291648000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDd8eXkoIoDFQAAAAAdAAAAABAE" alt="USA" class="flag"> <strong>USD</strong></span>
+      </ion-select-option>
+      <ion-select-option value="EUR">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FBandeira_Europeia&psig=AOvVaw0QJYuoxme0E0Q3zOIJZ6xe&ust=1734043326101000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDhx_bkoIoDFQAAAAAdAAAAABAE" alt="EU" class="flag"> <strong>EUR</strong></span>
+      </ion-select-option>
+      <ion-select-option value="BRL">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gov.br%2Fplanalto%2Fpt-br%2Fconheca-a-presidencia%2Facervo%2Fsimbolos-nacionais%2Fbandeira&psig=AOvVaw3teEignep1SspvP3l8sCi-&ust=1734043348335000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKC6toDloIoDFQAAAAAdAAAAABAE" alt="Brasil" class="flag"> <strong>BRL</strong></span>
+      </ion-select-option>
+      <ion-select-option value="GBP">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FBandeira_do_Reino_Unido&psig=AOvVaw1gfmnymhUC4E4GyQAnxvB3&ust=1734043372508000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCU9YvloIoDFQAAAAAdAAAAABAE" alt="Reino Unido" class="flag"> <strong>GBP</strong></span>
+      </ion-select-option>
+      <ion-select-option value="JPY">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrasilescola.uol.com.br%2Fjapao%2Fbandeira-do-japao.htm&psig=AOvVaw2zDgROtX56QF13TuOF5czW&ust=1734043421605000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjNwaPloIoDFQAAAAAdAAAAABAE" alt="Japão" class="flag"> <strong>JPY</strong></span>
+      </ion-select-option>
+      <ion-select-option value="CAD">
+        <span><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FBandeira_do_Canad%25C3%25A1&psig=AOvVaw1_YZLWVTUNJ6nMnjCyFA6H&ust=1734043440166000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDjnKzloIoDFQAAAAAdAAAAABAE" alt="Canadá" class="flag"> <strong>CAD</strong></span>
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button expand="full" color="warning" (click)="converter()" style="font-size: 1.2rem;">Converter</ion-button>
+  <ion-button expand="full" color="warning" (click)="trocarMoedas()" style="font-size: 1.2rem;">Trocar Moedas</ion-button>
+
+  <div *ngIf="resultado" style="text-align: center; margin-top: 20px;">
+    <h3 style="font-size: 1.5rem;">Resultado:</h3>
+    <p style="font-size: 1.2rem;">{{ valor }} {{ moedaOrigem }} = {{ resultado }} {{ moedaDestino }}</p>
+  </div>
+
+  <ion-button expand="full" color="warning" routerLink="/history" style="font-size: 1.2rem;">Ver Histórico</ion-button>
+</ion-content>

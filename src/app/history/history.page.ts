@@ -1,26 +1,34 @@
-import { Component } from '@angular/core';
-import { Storage } from '@ionic/storage-angular';
+import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-history',
   templateUrl: './history.page.html',
+  styleUrls: ['./history.page.scss'],
 })
-export class HistoryPage {
-  history: any[] = [];
+export class HistoryPage implements OnInit {
+  historico: any[] = [];
 
-  constructor(private storage: Storage) {
-    this.loadHistory();
-  }
+  constructor(private navController: NavController) {}
 
-  async loadHistory() {
-    const savedHistory = await this.storage.get('conversionHistory');
-    if (savedHistory) {
-      this.history = savedHistory;
+  ngOnInit() {
+    const historicoSalvo = localStorage.getItem('historico');
+    if (historicoSalvo) {
+      this.historico = JSON.parse(historicoSalvo);
     }
   }
 
-  clearHistory() {
-    this.history = [];
-    this.storage.set('conversionHistory', []);
+  excluirHistorico() {
+    localStorage.removeItem('historico');
+    this.historico = [];
+  }
+
+  excluirRegistro(index: number) {
+    this.historico.splice(index, 1);
+    localStorage.setItem('historico', JSON.stringify(this.historico));
+  }
+
+  voltarParaConversao() {
+    this.navController.navigateBack('/conversion');
   }
 }
