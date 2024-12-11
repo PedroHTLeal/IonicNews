@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { HistoryPage } from './history.page';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, HistoryPageModule],
+  imports: [CommonModule, FormsModule, IonicModule, HistoryPage],
   declarations: [HistoryPage]
 })
 export class HistoryPageModule {}

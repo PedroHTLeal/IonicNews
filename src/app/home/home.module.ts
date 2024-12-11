@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { HomePage } from './home.page';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, HomePageModule],
+  imports: [CommonModule, FormsModule, IonicModule],
   declarations: [HomePage]
 })
 export class HomePageModule {}
