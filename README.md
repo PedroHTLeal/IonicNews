@@ -73,6 +73,8 @@ coinnect-principal/
 ### Documentador + suporte no Github: Victor Gouveia 
 ### Documentador + suporte no Github: Thiago Silva 
 
+[Ferramentas e Frameworks utilizados.pdf](https://github.com/user-attachments/files/18118016/Ferramentas.e.Frameworks.utilizados.pdf)
+
 
 ## 🔒 Licença
 Creative Commons Attribution 4.0 International License (CC BY 4.0)
