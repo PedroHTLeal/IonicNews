@@ -13,7 +13,7 @@ cd coinnect-principal
 Certifique-se de que está no diretório do projeto e execute:
 npm install
 
-## 🔒 Pré-requisitos
+##  Pré-requisitos
 Certifique-se de ter as seguintes ferramentas instaladas:
 Node.js (recomendado v14 ou superior)
 npm (vem com o Node.js)
