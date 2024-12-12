@@ -44,21 +44,12 @@ git push origin minha-nova-funcionalidade
 Abra um Pull Request no repositório original.
 
 
-👨‍👩‍👦 Autores
-Scrum Master e Desenvolvedor: 
-### Pedro Leal (01591056)
-
-Gerente de configuração e Desenvolvedor: 
-### João Vitor Siqueira (01590594)
-
-Doumentador + suporte no Github: 
-### Kaio Vitor (01635673)
-
-Documentador + suporte no Github: 
-### Victor Gouveia (01602538)
-
-Documentador + suporte no Github: 
-### Thiago Silva (01643015)
+## 👨‍👩‍👦 Autores
+### Scrum Master e Desenvolvedor: Pedro Leal (01591056)
+### Gerente de configuração e Desenvolvedor: João Vitor Siqueira (01590594)
+### Doumentador + suporte no Github: Kaio Vitor (01635673)
+### Documentador + suporte no Github: Victor Gouveia (01602538)
+### Documentador + suporte no Github: Thiago Silva (01643015)
 
 
 ## 🔒 Licença
