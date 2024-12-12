@@ -13,6 +13,12 @@ cd coinnect-principal
 Certifique-se de que está no diretório do projeto e execute:
 npm install
 
+## 🔒 Pré-requisitos
+Certifique-se de ter as seguintes ferramentas instaladas:
+Node.js (recomendado v14 ou superior)
+npm (vem com o Node.js)
+Ionic CLI:
+npm install -g @ionic/cli
 
 ## Como contribuir 
 Adoramos contribuições! Siga os passos abaixo para participar do projeto:
