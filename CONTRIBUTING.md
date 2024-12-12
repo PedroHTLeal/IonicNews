@@ -15,7 +15,7 @@ git push origin minha-nova-funcionalidade
 
 Abra um Pull Request no repositório original.
 
-Clonando e usando o repositório
+## Clonando e usando o repositório
 1. Clone o repositório:
    ```bash
    git clone https://github.com/PedroHTLeal/IonicNews
