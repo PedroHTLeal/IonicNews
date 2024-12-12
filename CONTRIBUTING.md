@@ -18,7 +18,7 @@ Abra um Pull Request no repositório original.
 Clonando e usando o repositório
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/PedroHTLeal/coinnect
+   git clone https://github.com/PedroHTLeal/IonicNews
    ```
 
 2. Navegue até o diretório do projeto:
