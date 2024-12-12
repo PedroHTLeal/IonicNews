@@ -10,7 +10,7 @@ O Coinnect é um aplicativo multiplataforma que permite aos usuários converter 
 ## 🔧 Como Baixar o Repositório
 ### Passo 1: Clone o Repositório
 Execute o seguinte comando no terminal:
-git clone <[repository-url](https://github.com/PedroHTLeal/coinnect.git)>
+git clone <[IonicNews - Coinnect](https://github.com/PedroHTLeal/IonicNews.git))>
 
 ### Passo 2: Acesse o Diretório do Projeto
 cd coinnect-principal
