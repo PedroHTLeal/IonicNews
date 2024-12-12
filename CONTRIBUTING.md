@@ -35,6 +35,7 @@ git push origin minha-nova-funcionalidade
 
 Abra um Pull Request no repositório original.
 
+[Ferramentas e Frameworks utilizados.pdf](https://github.com/user-attachments/files/18118008/Ferramentas.e.Frameworks.utilizados.pdf)
 
 
    
