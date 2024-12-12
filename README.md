@@ -4,8 +4,21 @@ Um aplicativo desenvolvido com Ionic e Angular para conversão de moedas em temp
 
 
 ## 🔧 Descrição do Projeto
-O Coinnect é um aplicativo multiplataforma que permite aos usuários converter valores entre diferentes moedas usando taxas de câmbio atualizadas em tempo real. Criado para ser responsivo e acessível, o projeto é ideal para aplicações tanto educacionais quanto práticas no dia a dia.
+Este aplicativo oferece uma interface amigável para conversão de moedas usando taxas de câmbio em tempo real. Ele foi construído com:
 
+- **Angular**: Para criação de aplicações web dinâmicas de página única.
+- **Ionic Framework**: Para criar aplicações móveis responsivas e multiplataforma.
+  
+![WhatsApp Image 2024-12-12 at 17 10 44](https://github.com/user-attachments/assets/9aac2273-42b6-47b1-9e05-047fe4eaaee3)
+![WhatsApp Image 2024-12-12 at 17 13 10](https://github.com/user-attachments/assets/d08ac022-115d-4367-a53c-ff1561cc6579)
+![WhatsApp Image 2024-12-12 at 17 13 35](https://github.com/user-attachments/assets/012faea3-38b7-4f71-bebf-c5e612aaedd5)
+![WhatsApp Image 2024-12-12 at 17 14 30](https://github.com/user-attachments/assets/0ce5c792-0653-425a-846e-08937d79c133)
+![WhatsApp Image 2024-12-12 at 18 05 11](https://github.com/user-attachments/assets/1c8acd36-cb2d-48c5-9a86-1ccffb250e5b)
+
+## Funcionalidades
+- Conversão de moedas em tempo real.
+- Design responsivo para dispositivos web e móveis.
+- Interface fácil de usar.
 
 ## 🔧 Como Baixar o Repositório
 ### Passo 1: Clone o Repositório
@@ -43,13 +56,22 @@ git push origin minha-nova-funcionalidade
 
 Abra um Pull Request no repositório original.
 
+## Estrutura do Projeto
+```
+coinnect-principal/
+├── src/               # Código-fonte da aplicação
+├── angular.json       # Configuração do Angular
+├── ionic.config.json  # Configuração do Ionic
+├── package.json       # Metadados e scripts do projeto
+└── ...                # Outros arquivos de configuração
+```
 
 ## 👨‍👩‍👦 Autores
-### Scrum Master e Desenvolvedor: Pedro Leal (01591056)
-### Gerente de configuração e Desenvolvedor: João Vitor Siqueira (01590594)
-### Doumentador + suporte no Github: Kaio Vitor (01635673)
-### Documentador + suporte no Github: Victor Gouveia (01602538)
-### Documentador + suporte no Github: Thiago Silva (01643015)
+### Scrum Master e Desenvolvedor: Pedro Leal 
+### Gerente de configuração e Desenvolvedor: João Vitor Siqueira 
+### Doumentador + suporte no Github: Kaio Vitor 
+### Documentador + suporte no Github: Victor Gouveia 
+### Documentador + suporte no Github: Thiago Silva 
 
 
 ## 🔒 Licença
